@@ -1,0 +1,15 @@
+name: Hello World Workflow
+
+# This workflow will run when there is a push to the repository
+on:
+  push:
+    branches:
+      - main  # You can also use other branches, or set it to 'push' for all branches
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest  # The job will run on the latest Ubuntu runner
+
+    steps:
+      - name: Say Hello
+        run: echo "Hello, World!"
